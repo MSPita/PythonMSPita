@@ -10,8 +10,8 @@ a = [int(i) for i in input("Задайте элементы массива: ").s
 
 x = int(input("Введите искомое число: "))
 count = 0
-for arg in a:
-    if x == arg:
+for i in range(n):
+    if x == a[i]:
         count += 1
   
 print(count)
