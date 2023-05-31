@@ -8,9 +8,18 @@ n = int(input("Введите длину массива: "))
 a = [int(i) for i in input("Задайте элементы массива: ").split()]
 
 x = int(input("Введите число для сравнения: "))
-# count = 0
-for arg in a:
-    if x == arg:
-        count += 1
+count = x - a[0]
+if count < 0:
+    count *= (-1)
+
+nea = a[0]    
+for i in range(1,n):
+    diff = x - a[i]
+
+    if diff < 0:
+        diff *= (-1)
+    if count > diff:
+        count = diff
+        nea = a[i]
   
-print(count)
+print(nea)
