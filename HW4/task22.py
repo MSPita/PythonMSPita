@@ -17,5 +17,5 @@ set_a = set(a)
 set_b = set(b)
 
 set_sum = set_a.union(set_b)
-print(set_sum)
+print(*set_sum)
 
