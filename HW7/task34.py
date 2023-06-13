@@ -11,7 +11,7 @@
 # ;  “Парам пам-пам”, если с ритмом все в порядке и “Пам парам”, 
 # ;  если с ритмом все не в порядке
 
-verse = list(input("А есть ли ритм? Стих:  ").split())
+verse = list(input("А есть ли ритм? Стих:  ").lower().split())
 list_res = set()
 for word in verse:
     count = 0
@@ -25,3 +25,4 @@ if len(list_res) == 1:
 else:
     print('Пам парам')
 
+ 
